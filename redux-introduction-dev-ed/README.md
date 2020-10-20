@@ -1,4 +1,4 @@
-A very simple counter app built from a tutorial video by Dev Ed (https://www.youtube.com/watch?v=CVpUuw9XSjY). This porject was built to help understand the fundamentals of how Redux manages state within react and how to structure an application to take advantage of it.
+A very simple counter app built from a tutorial video by Dev Ed (https://www.youtube.com/watch?v=CVpUuw9XSjY). This project was built to help understand the fundamentals of how Redux manages state within react and how to structure an application to take advantage of it.
 
 
 
