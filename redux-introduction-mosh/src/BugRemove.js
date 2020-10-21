@@ -1,20 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import store from './store';
+import { bugResolved } from './actions';
 
-function BugRemove(props) {
+function BugRemove() {
     // Local State
-    // const [id, setId] = useState();
-    let id;
+    const [id, setId] = useState();
 
     // Functions
     const handleResolve = id => {
-        console.log(id);
-        props.bugResolved(id);
+        store.dispatch(bugResolved(parseInt(id)));
         console.log(store.getState());
     };
 
     const updateId = (e) => {
-        id = e.target.value;
+        setId(e.target.value);
         console.log(id);
     }
 

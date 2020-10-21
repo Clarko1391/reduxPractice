@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import BugInput from './BugInput';
 import BugRemove from './BugRemove';
-import { bugAdded, bugResolved } from './actions';
-import store from './store';
 
 // store.dispatch(bugAdded("Bug 1"));
 
@@ -18,9 +16,7 @@ import store from './store';
 ReactDOM.render(
   <React.StrictMode>
     <BugInput />
-    <BugRemove 
-        bugResolved = {bugResolved}
-    />
+    <BugRemove />
   </React.StrictMode>,
   document.getElementById('root')
 );

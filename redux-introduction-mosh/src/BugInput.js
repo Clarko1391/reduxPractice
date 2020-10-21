@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import store from './store';
-import * as actions from './actions';
+import { bugAdded } from './actions';
 
 function BugInput() {
     // Local State
@@ -8,7 +8,7 @@ function BugInput() {
 
     // Functions
     const addBug = () => {
-        store.dispatch(actions.bugAdded(desc))
+        store.dispatch(bugAdded(desc))
         console.log(store.getState());
         setDesc('');
     };
