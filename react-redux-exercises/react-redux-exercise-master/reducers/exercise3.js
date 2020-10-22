@@ -1,14 +1,16 @@
 import actionTypes from '../actions/actionTypes';
+import store from '../store/configureStore';
+
 
 const initialState = {
-    currentValue: ' ',
-    previousValue: ' ',
+    currentValue: '',
+    previousValue: ''
 };
 
 const itemSelected = (state, action) => {
     return Object.assign({}, state, {
-        previousValue: action.payload.previousValue,
-        currentValue: action.payload.currentValue
+        previousValue: state.currentValue,
+        currentValue: action.payload.currentValue,
     });
 };
 

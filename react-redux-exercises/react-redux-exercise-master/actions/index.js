@@ -44,8 +44,7 @@ export const itemSelected = (event) => {
     return {
         type: actionTypes.ITEM_SELECTED,
         payload: {
-            previousValue: currentValue,
-            currentValue: event.target,
+            currentValue: event.target.selectedOptions[0].value,
         },
     };
 };
