@@ -19,7 +19,7 @@ import actionTypes from '../actions/actionTypes';
 
 // Each reducer must define the initial state it works on.
 const initialState = {
-    value: 'Initial value',
+    value: 'Clark was here',
 };
 
 const changeValue = (state, action) => {

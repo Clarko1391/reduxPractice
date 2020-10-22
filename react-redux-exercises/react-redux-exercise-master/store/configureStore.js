@@ -9,5 +9,6 @@ const middleware = [
 export default createStore(rootReducer, compose(
     applyMiddleware(...middleware),
     // Expose store to Redux DevTools extension.
-    global.devToolsExtension ? global.devToolsExtension() : fct => fct,
+    // global.devToolsExtension ? global.devToolsExtension() : fct => fct,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 ));

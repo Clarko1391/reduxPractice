@@ -23,6 +23,7 @@ const ExerciseTwo = ({ hasTickedBox, boxTicked }) => (
                     name="box"
                     value={true}
                     checked={hasTickedBox}
+                    // checked = {true} will 'tick' the box, make {hasTickedBox} = true
                     onClick={boxTicked}
                 /> box
             </label>

@@ -22,7 +22,13 @@ export const changeValue = (event) => {
 
 // TODO: IMPLEMENT ME
 // I work with /reducers/exercise1.js
-export const buttonClicked = () => {
+export const buttonClicked = (event) => {
+    return {
+        type: actionTypes.BUTTON_CLICKED, 
+        payload: {
+            buttonWhoGotClickedName: event.target.innerHTML,
+        },
+    };
 };
 
 export const boxTicked = (event) => {
@@ -30,6 +36,16 @@ export const boxTicked = (event) => {
         type: actionTypes.BOX_TICKED,
         payload: {
             hasTickedBox: event.target.checked,
+        },
+    };
+};
+
+export const valueChanged = (event) => {
+    return {
+        type: actionTypes.VALUE_CHANGED,
+        payload: {
+            previousValue: currentValue,
+            currentValue: event.target.innerHTML,
         },
     };
 };

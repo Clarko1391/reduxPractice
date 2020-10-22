@@ -23,7 +23,7 @@
   "homepage": "https://github.com/springload/react-redux-exercise",
   "dependencies": {
     "babel-polyfill": "^6.3.14",
-    "express": "^4.13.3",
+    "express": "^4.17.1",
     "keymirror": "^0.1.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
