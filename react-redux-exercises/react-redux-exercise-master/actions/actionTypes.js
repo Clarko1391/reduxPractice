@@ -4,5 +4,5 @@ export default keyMirror({
     CHANGE_VALUE: null,
     BOX_TICKED: null,
     BUTTON_CLICKED: null,
-    VALUE_CHANGED: null,
+    ITEM_SELECTED: null,
 });

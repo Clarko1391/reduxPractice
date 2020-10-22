@@ -7,12 +7,16 @@ const initialState = {
     hasTickedBox: false,
 };
 
+const changeTicked = (state, action) => {
+    return Object.assign({}, state, {
+        hasTickedBox: action.payload.hasTickedBox,
+    });
+};
+
 const exercise = (state = initialState, action) => {
     switch (action.type) {
         case (actionTypes.BOX_TICKED):
-            return Object.assign({}, state, {
-                hasTickedBox: true,
-            });
+            return changeTicked(state, action);
         default:
             return state;
     }

@@ -26,7 +26,7 @@ export const buttonClicked = (event) => {
     return {
         type: actionTypes.BUTTON_CLICKED, 
         payload: {
-            buttonWhoGotClickedName: event.target.innerHTML,
+            buttonWhoGotClickedName: event.target.value,
         },
     };
 };
@@ -40,12 +40,12 @@ export const boxTicked = (event) => {
     };
 };
 
-export const valueChanged = (event) => {
+export const itemSelected = (event) => {
     return {
-        type: actionTypes.VALUE_CHANGED,
+        type: actionTypes.ITEM_SELECTED,
         payload: {
             previousValue: currentValue,
-            currentValue: event.target.innerHTML,
+            currentValue: event.target,
         },
     };
 };

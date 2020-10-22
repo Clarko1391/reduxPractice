@@ -3,44 +3,49 @@ import React, { PropTypes } from 'react';
 const propTypes = {
     currentValue: PropTypes.string.isRequired,
     previousValue: PropTypes.string.isRequired,
-    valueChanged: PropTypes.func.isRequired,
+    itemSelected: PropTypes.func.isRequired,
 };
 
 // This component should stay "dumb" (i.e. stateless)
 // It should not have it's own state and should only use props
-const ExerciseThree = ({ currentValue, previousValue, valueChanged }) => (
+const ExerciseThree = ({ currentValue, previousValue, itemSelected }) => (
     <div>
         <h1>Exercise 3</h1>
         <div style={{ marginBottom: '10px' }}>
 
-            <select name="colours" id="colours" value={currentValue}>
+            <select 
+                name="colours" 
+                id="colours"
+                onChange={itemSelected}
+                >
 
                 <option 
                     value=""
-                    onClick={valueChanged}
+                    // onChange={itemSelected}
                 > 
                 </option>
 
                 <option 
                     value="blue"
-                    onClick={valueChanged}
+                    // onChange={itemSelected}
                 >Blue
                 </option>
 
                 <option 
                     value="white"
-                    onClick={valueChanged}
+                    // onChange={itemSelected}
                 >White
                 </option>
 
                 <option 
                     value="red"
-                    onClick={valueChanged}
+                    // onChange={itemSelected}
                 >Red
                 </option>
 
             </select>
-            <h4>{previousValue}</h4>
+            <h4>{`Currently Selected: | ${currentValue} |`}</h4>
+            <h4>{`Previously Selected: | ${previousValue} |`}</h4>
             
             {/* <i>
                 Build me from scratch!<br />

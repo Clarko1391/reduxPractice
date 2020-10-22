@@ -11,8 +11,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        valueChanged: (event) => {
-            dispatch(actions.valueChanged(event));
+        itemSelected: (event) => {
+            dispatch(actions.itemSelected(event));
         },
     };
 };
