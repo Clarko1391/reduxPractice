@@ -1,3 +1,7 @@
+This is a simple "bug-tracking" app created by following a tutorial from Programming with Mosh (https://www.youtube.com/watch?v=poQXNp9ItL4&t=4s).
+
+You can clone the repo and use NPM to run an offline version of the app, You will also want to have Redux Devtools installed on Chrome so you can view the store and track your interactions with the app.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
