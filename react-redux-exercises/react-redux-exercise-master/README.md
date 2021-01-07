@@ -1,6 +1,9 @@
-# react-redux-exercise
+These React / Redux exercises were completed to better understand how redux integrates with standard React file structure and to learn the differences in stateful vs stateless and functional vs class-based components.
 
-> Exercise to understand better React and Redux, how they work and how to use them.
+There isn't a whole lot to see if you want to run this app locally as it mainly just plain code to understand the flow of state through the file structure but you can use NPM to run a local, offline copy if you clone the repo to your machine.
+
+
+# react-redux-exercise
 
 **If you like this repo and/or learnt something from it, please give us a star :) Thanks!**
 
